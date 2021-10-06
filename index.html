@@ -14,35 +14,35 @@
 
 <body>
   <div id="calculadora">
-    <p id="visor">0.00</p>
+    <p id="visor">0</p>
     <table>
       <tr>
-        <td colspan="2" class="acoes">C</td>
-        <td colspan="2" class="acoes">Del</td>
+        <td colspan="2" class="acoes" onclick="limpar()">C</td>
+        <td colspan="2" class="acoes" onclick="deletar()">Del</td>
       </tr>
       <tr>
-        <td>7</td>
-        <td>8</td>
-        <td>9</td>
-        <td class="operadores">/</td>
+        <td onclick="inserir('7')">7</td>
+        <td onclick="inserir('8')">8</td>
+        <td onclick="inserir('9')">9</td>
+        <td class="operadores" onclick="inserir('/')">/</td>
       </tr>
       <tr>
-        <td>4</td>
-        <td>5</td>
-        <td>6</td>
-        <td class="operadores">*</td>
+        <td onclick="inserir('4')">4</td>
+        <td onclick="inserir('5')">5</td>
+        <td onclick="inserir('6')">6</td>
+        <td class="operadores" onclick="inserir('*')">*</td>
       </tr>
       <tr>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-        <td class="operadores">-</td>
+        <td onclick="inserir('1')">1</td>
+        <td onclick="inserir('2')">2</td>
+        <td onclick="inserir('3')">3</td>
+        <td class="operadores" onclick="inserir('-')">-</td>
       </tr>
       <tr>
-        <td class="operadores">.</td>
-        <td>0</td>
-        <td class="operadores">=</td>
-        <td class="operadores">+</td>
+        <td class="operadores" onclick="inserir('.')">.</td>
+        <td onclick="inserir('0')">0</td>
+        <td class="operadores" onclick="calcular()">=</td>
+        <td class="operadores" onclick="inserir('+')">+</td>
       </tr>
     </table>
   </div>
