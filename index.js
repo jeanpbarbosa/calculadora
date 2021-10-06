@@ -17,7 +17,13 @@ function limpar() {
 
 function deletar() {
   var valorAtual = document.getElementById("visor").innerHTML;
-  valorAtual = valorAtual.slice(0, -1);
+
+  if(valorAtual.length <= 1) {
+    valorAtual = 0
+  } else {
+    valorAtual = valorAtual.slice(0, -1);
+  }
+  
   document.getElementById("visor").innerHTML = valorAtual;
 }
 
