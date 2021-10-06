@@ -6,6 +6,7 @@ html {
   --cor-botao: #c2e079;
 
   background-color: grey;
+  user-select: none;
 }
 
 #calculadora {
@@ -14,6 +15,9 @@ html {
   padding: 10px;
   border-radius: 10px;
   box-shadow: 8px 8px 3px 0px #696969;
+  position: absolute;
+  top: 25%;
+  left: 40%;
 }
 
 #visor {
